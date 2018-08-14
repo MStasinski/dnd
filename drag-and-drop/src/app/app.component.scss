@@ -1,0 +1,44 @@
+.box {
+  background: #1a8ed0;
+  border: 1px solid black;
+  padding: 10px 20px;
+  min-width: 200px;
+  max-width: 200px;
+  height:200px;
+
+  margin-left: 10px;
+  margin-top: 10px;
+
+  &.dragging {
+    background: rgba(255, 127, 80, 0);
+  }
+}
+
+.dragbox{
+  overflow: scroll;
+  background: #44fa1c;
+  width: 800px;
+  height: 300px;
+  display: flex;
+  justify-content: left;
+}
+
+.dropzone {
+  padding: 20px;
+  margin: 20px 0;
+  background: lightgray;
+  width: 600px;
+  min-height: 400px;
+  display: flex;
+  /*justify-content: left;*/
+  border: 1px solid black;
+
+  &.dropzone-activated {
+    border: 1px solid red;
+  }
+
+  &.dropzone-entered {
+    background-color: #efefef;
+  }
+}
+
